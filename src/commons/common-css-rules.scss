@@ -43,6 +43,7 @@ $icon-color: #2e86c1;
 $breakpoints: (
   "xs": 0,
   "sm": 400px,
+  "sm-md": 576px,
   "md": 768px,
   "lg": 992px,
   "xl": 1200px,
@@ -56,6 +57,11 @@ $breakpoints: (
 
 @mixin sm {
   @media (max-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+@mixin sm-md {
+  @media (max-width: map-get($breakpoints, "sm-md")) {
     @content;
   }
 }
@@ -117,6 +123,10 @@ textarea {
 body {
   background-color: $body-color;
   color: $text-color;
+
+  @include md {
+    margin: 0 0 $header-height 0;
+  }
 }
 
 h1,
@@ -147,6 +157,10 @@ img {
 
 .section {
   padding: 6rem 0 2rem;
+
+  @include md {
+    padding: 2rem 0 4rem;
+  }
 }
 
 .section-title {
@@ -158,6 +172,10 @@ img {
   display: block;
   font-size: $small-font-size;
   margin-bottom: 4rem;
+
+  @include md {
+    margin-bottom: $mb-3;
+  }
 }
 
 .section-title,
@@ -169,6 +187,14 @@ img {
   max-width: 968px;
   margin-left: auto;
   margin-right: auto;
+
+  @include lg {
+    margin: 0 $mb-1-5;
+  }
+
+  @include sm {
+    margin: 0 $mb-1;
+  }
 }
 
 .grid {
@@ -178,19 +204,32 @@ img {
 
 .button {
   display: inline-block;
-  background-color: $title-color;
-  color: $container-color;
-  padding: 1.25rem 2rem;
-  border-radius: 1rem;
+  background-color: transparent ;
+  gap: 0.3rem;
+  color: gray;
+  padding: 0.75rem 2rem;
+  border-radius: 0.625rem;
   font-weight: $font-medium;
+  border: 1px solid indigo;
+  transition: $transition;
+
+  @include lg {
+    padding: 1rem 1.75rem;
+  }
 }
 
 .button:hover {
-  background-color: $title-dark-color;
+  background-color: rgb(236, 233, 233);
+  transform: scale(0.9);
 }
 
 .button-icon {
   margin-left: $mb-0-5;
+
+  @include lg {
+    width: 1.375rem;
+    height: 1.375rem;
+  }
 }
 
 .button--flex {
@@ -198,35 +237,6 @@ img {
   align-items: center;
 }
 
-.container {
-  @include lg {
-    margin: 0 $mb-1-5;
-  }
-}
-.container {
-  @include sm {
-    margin: 0 $mb-1;
-  }
-}
-
-  .button {
-    @include lg {
-      padding: 1rem 1.75rem;
-    }
-  }
-
-  .button-icon {
-    @include lg {
-      width: 1.375rem;
-      height: 1.375rem;
-    }
-  }
-
-  .section {
-    @include lg {
-      padding: 2rem 0 4rem;
-    }
-  }
 
   @media screen and (max-width: 350px){
     :root {
