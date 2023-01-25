@@ -1,37 +1,37 @@
 const navLink = [
   {
     id: 1,
-    link: '/',
+    link: '#',
     name: 'Home',
     icon: 'estate',
   },
   {
     id: 2,
-    link: '/about',
+    link: '#about',
     name: 'About',
     icon: 'user',
   },
   {
     id: 3,
-    link: '/skills',
+    link: '#skills',
     name: 'Skills',
     icon: 'file-alt',
   },
   {
     id: 4,
-    link: '/services',
+    link: '#services',
     name: 'Service',
     icon: 'briefcase-alt',
   },
   {
     id: 5,
-    link: '/portfolio',
+    link: '#portfolio',
     name: 'Portfolio',
     icon: 'scenery',
   },
   {
     id: 6,
-    link: '/contacts',
+    link: '#contacts',
     name: 'Contacts',
     icon: 'message',
   },
