@@ -170,6 +170,29 @@ const backendSkills = [
   },
 ];
 
+const services = [
+  {
+    id: 1,
+    service: 'I develop user interface',
+  },
+  {
+    id: 2,
+    service: 'Web page development',
+  },
+  {
+    id: 3,
+    service: 'I create ux element interactions',
+  },
+  {
+    id: 4,
+    service: 'I position your company brand.',
+  },
+  {
+    id: 5,
+    service: 'Design and mockups of products for companies',
+  },
+];
+
 export {
-  navLink, socialLink, frontendSkills, backendSkills,
+  navLink, socialLink, frontendSkills, backendSkills, services,
 };
