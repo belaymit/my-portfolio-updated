@@ -1,37 +1,10 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="src/assets/headline.PNG" alt="magic calculator logo" width="700" height="300"/>
+  <h1>My Portfolio</h1>
   <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -60,17 +33,29 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 my-portfolio-updated<a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**bookstore-react-redux** is a sleek, modern, and responsive website developed using React. It showcases my experience as a frontend developer and provides a clear and concise overview of my skills and projects. The portfolio is built using the latest version of React and utilizes React hooks, functional components, and the latest JavaScript features. The website is optimized for performance and is built using a mobile-first approach, ensuring that it looks great on any device. It features a clean and intuitive design, with a focus on showcasing my work. The portfolio includes a section dedicated to my technical skills, including a comprehensive list of the technologies I am proficient in. It also includes a section showcasing my past projects, with detailed information on the technologies used, and the problem the project was solving.
+
+The portfolio also includes a section for my personal projects, where I share my completed and latest projects and my experience working remotely. 
+
+It also has a contact form, which allows visitors to easily reach out to me for any further information or to discuss any potential projects.Overall, the portfolio is a great representation of my skills and experience as a frontend developer and is built using the latest React technologies
+
+- React 18 and best practices
+- props and states
+- React Router 
+- React Icons 
+- Re-Usable Components
+- React Hooks (useState)
+- CSS transition and animation
+- Redux for state management
+- and more...
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
@@ -79,37 +64,24 @@ After you're finished please remove all the comments and instructions!
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
-
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Navigation**
+- **Home**
+- **About**
+- **Skills**
+- **Services**
+- **Portfolio**
+- **Services**
+- **Footer**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://yourdeployedapplicationlink.com)
 
@@ -119,83 +91,75 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+
 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
-
-<!--
-Example command:
+> - Basic understanding of the following:
+> - HTM5/CSS3, SASS
+> - ES6
+> - webpack
+> - JSX
+> - ReactJS
+> - redux
+### tools
+- install Vs Code or any of your favored code editor
+- install node 
 
 ```sh
- gem install rails
+ npx create-react-app .
 ```
- -->
+
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone git@github.com:belaymit/my-portfolio-updated.git
 ```
---->
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
 
 ```sh
-  cd my-project
-  gem install
+  cd my-portfolio-updated
+  npm install
 ```
---->
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
 
 ```sh
-  rails server
+ npm start
 ```
---->
+
 
 ### Run tests
 
 To run tests, run the following command:
+>  npm run test
 
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
 
-```sh
+- [GitHub pages](https://github.com/belaymit/math-magicians/settings/pages) 
+- [netlify](https://www.netlify.com/)
+- [000webhost.com](https://www.000webhost.com/)
+- [Render](https://render.com/)
 
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,19 +167,13 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Belay Birhanu G**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/belaymit)
+- Twitter: [@twitterhandle](https://twitter.com/2belamit)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/belay-birhanu-144ba714b/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -223,12 +181,7 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
-
+- **Projects Detail**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
@@ -237,7 +190,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/belaymit/bookstore-react-redux/issues)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -245,9 +198,8 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project please give it a star
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -255,9 +207,8 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+- I would like to thank [Cryptical Coder](https://www.youtube.com/watch?v=3aCoZudPEKE&t=8073s&ab_channel=CrypticalCoder)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -265,15 +216,14 @@ I would like to thank...
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **What are the core requirements to do this project?**
 
-  - [Answer_1]
+  - having a knowledge of ES6 and basic understanding of ReactJS, redux, react-router, state management, props.
 
-- **[Question_2]**
+- **What is the expected outcome of the project?**
 
-  - [Answer_2]
+  - learn abut ReactJS, React components, React hooks, more on ES6, webpack and etc.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -281,7 +231,7 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
