@@ -1,5 +1,6 @@
 import React from 'react';
 import About from './components/about/About';
+import Contacts from './components/contacts/Contacts';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 import Qualification from './components/qualification/Qualification';
@@ -18,6 +19,7 @@ const App = () => (
       <Services />
       <Qualification />
       <Testimonial />
+      <Contacts />
     </main>
     <FloatingNav />
   </>
