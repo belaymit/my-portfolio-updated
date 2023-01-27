@@ -242,3 +242,24 @@ img {
     $bg-font-size: 2.25rem;
   }
 }
+
+.btn {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: $link-color;
+  color: #fff;
+  padding: 0.6rem 1.5rem;
+  border: 2px solid transparent;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: $transition;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border-color: indigo;
+  transform: translateY(-0.5rem);
+  color: #222;
+}
