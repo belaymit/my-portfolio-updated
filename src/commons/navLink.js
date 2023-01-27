@@ -255,15 +255,15 @@ const portfolioData = [
   {
     id: 1,
     image: Img1,
-    title: 'Awesome Books',
-    github: 'https://github.com/belaymit/Awesome-books--ES6',
-    demo: 'https://belaymit.github.io/Awesome-books--ES6/',
+    title: 'Bookstore - React App',
+    github: 'https://github.com/belaymit/bookstore-react-redux',
+    demo: 'https://bookstore-react-redux.onrender.com/',
   },
 
   {
     id: 2,
     image: Img2,
-    title: 'Microverse Capstone Project I',
+    title: 'Capstone Project I',
     github: 'https://github.com/belaymit/Microverse-Capstone-Project-M1',
     demo: 'https://belaymit.github.io/Microverse-Capstone-Project-M1/',
   },
@@ -279,25 +279,25 @@ const portfolioData = [
   {
     id: 4,
     image: Img4,
-    title: 'Conference Program',
-    github: 'https://github.com/belaymit/Microverse-Capstone-Project-M1',
+    title: 'Leaderborad Game',
+    github: 'https://github.com/belaymit/leaderboard-APIs-git-flow/',
     demo: 'https://belaymit.github.io/Microverse-Capstone-Project-M1/',
   },
 
   {
     id: 5,
     image: Img5,
-    title: 'Conference Speakers',
-    github: 'https://github.com/belaymit/Microverse-Capstone-Project-M1',
-    demo: 'https://belaymit.github.io/Microverse-Capstone-Project-M1/',
+    title: 'Math Magician',
+    github: 'https://github.com/belaymit/math-magicians',
+    demo: 'https://new-math-magician.onrender.com/',
   },
 
   {
     id: 6,
     image: Img6,
-    title: 'Leaderboard',
-    github: 'https://github.com/belaymit/leaderboard-APIs-git-flow',
-    demo: 'https://github.com/belaymit/leaderboard-APIs-git-flow',
+    title: 'Movie App',
+    github: 'https://github.com/belaymit/Capstone-module-2',
+    demo: 'https://belaymit.github.io/Capstone-module-2/dist/',
   },
 
 ];
