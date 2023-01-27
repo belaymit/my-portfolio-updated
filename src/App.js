@@ -5,6 +5,7 @@ import Home from './components/home/Home';
 import Qualification from './components/qualification/Qualification';
 import Services from './components/services/Services';
 import Skills from './components/skills/Skills';
+import Testimonial from './components/testimonial/Testimonial';
 import FloatingNav from './components/ui/FloatingNav';
 
 const App = () => (
@@ -16,6 +17,7 @@ const App = () => (
       <Skills />
       <Services />
       <Qualification />
+      <Testimonial />
     </main>
     <FloatingNav />
   </>
