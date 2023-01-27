@@ -1,0 +1,107 @@
+@import '../commons/common-css-rules.scss';
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+  margin: 2rem 0 6rem;
+  h2 {
+    text-align: center;
+  }
+  .review-title {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    padding: 1rem;
+    border-bottom: 0.3px solid rgb(236, 231, 231);
+  }
+
+  .container {
+    width: 70%;
+    .testimonial {
+      background: #fff;
+      text-align: center;
+      padding: 2rem;
+      border-radius: 2rem;
+      user-select: none;
+
+      &.hover {
+        border: 0.3px solid $link-color;
+
+        .reviewer-avatar {
+          border: 0.4rem solid orangered;
+        }
+      }
+
+      .reviewer-avatar {
+        width: 4rem;
+        aspect-ratio: 1/1;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 0 auto 1rem;
+        border: 0.4rem solid $link-color;
+      }
+
+      .reviewer-review {
+        color: black;
+        font-weight: 300;
+        display: block;
+        width: 90%;
+        text-align: center;
+        margin: 0.8rem auto 0;
+      }
+
+      .card {
+        background: whitesmoke;
+        padding: 1.5rem;
+        border: 2px solid transparent;
+        border-radius: 0.25rem;
+        transition: $transition;
+
+        &:hover {
+          background: transparent;
+          border-color: #fff;
+          transform: translateX(-0.5rem);
+        }
+        &.light {
+          background: #fff;
+
+          &:hover {
+            background: transparent;
+            border-color: $link-color;
+          }
+        }
+        @include md {
+          padding: 1.2rem;
+        }
+      }
+    }
+    .testimonial-btn-container {
+      width: fit-content;
+      margin: 2.5rem auto 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      .testimonial-btn {
+        background: transparent;
+        cursor: pointer;
+        fill: var(--color-primary);
+        font-size: 1.9rem;
+        width: 3rem;
+        height: 3rem;
+        color: rgb(8, 8, 139);
+      }
+    }
+    @include lg {
+      width: 90%;
+      text-align: center;
+      margin: 0 2rem;
+    }
+    @include sm {
+      width: 100%;
+      margin: 0 2rem;
+    }
+  }
+}
