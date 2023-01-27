@@ -18,17 +18,16 @@ const About = () => (
       <div className="about-data">
         <Info />
         <p className="about-description">
-          I am a software developer, and my area of
-          expertise is front-end development.
-          I use UI/UX user interface to create web pages.
-          At Microverse, I have experience mentoring
-          junior developers and code reviewing in addition
-          to working on projects that adhere to industry standards.
-          During my three years as an assistant lecturer at Haramaya
-          University, my ability to interact with people and communicate
-          effectively significantly improved.
-          I am good at mediating conflicts and have no trouble
-          understanding my teammates.
+          Hello, my name is Belay, and I am a remote frontend developer
+          with experience working at Microverse. I am skilled in technologies
+          such as React, Redux, JavaScript, SASS, Bootstrap and HTML/CSS and have a strong
+          understanding of user experience and design principles. I have experience
+          working in a remote team environment and am comfortable using tools
+          like GitHub and Slack to collaborate effectively with my colleagues.
+          My experience at Microverse has given me the opportunity to work on
+          a wide range of projects and collaborate with developers from around
+          the world. I am excited about the opportunity to bring my skills and
+          experience to a new team and help build great products remotely.
         </p>
         <a href="https://docs.google.com/document/d/15ChKO9UmkTZZIl-9vBVUdCTnK9dNWOVwErJ6WKXC37Y/edit?usp=sharing" className="button button--flex" type="button">
           Download CV
