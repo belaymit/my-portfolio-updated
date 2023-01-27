@@ -5,9 +5,11 @@
   justify-content: center;
   flex-direction: column;
   margin: 2rem 0 1rem;
+
   h2 {
     text-align: center;
   }
+
   .review-title {
     text-align: center;
     margin-bottom: 1.2rem;
@@ -17,20 +19,13 @@
 
   .container {
     width: 70%;
+
     .testimonial {
       background: #fff;
       text-align: center;
       padding: 2rem;
       border-radius: 2rem;
       user-select: none;
-
-      &.hover {
-        border: 0.3px solid $link-color;
-
-        .reviewer-avatar {
-          border: 0.4rem solid orangered;
-        }
-      }
 
       .reviewer-avatar {
         width: 4rem;
@@ -39,6 +34,14 @@
         border-radius: 50%;
         margin: 0 auto 1rem;
         border: 0.4rem solid $link-color;
+      }
+
+      &:hover {
+        border: 0.3px solid $link-color;
+
+        .reviewer-avatar {
+          border: 0.4rem solid rgb(79, 3, 114);
+        }
       }
 
       .reviewer-review {
@@ -62,6 +65,7 @@
           border-color: #fff;
           transform: translateX(-0.5rem);
         }
+
         &.light {
           background: #fff;
 
@@ -70,11 +74,13 @@
             border-color: $link-color;
           }
         }
+
         @include md {
           padding: 1.2rem;
         }
       }
     }
+
     .testimonial-btn-container {
       width: fit-content;
       margin: 2.5rem auto 0;
@@ -93,11 +99,13 @@
         color: rgb(8, 8, 139);
       }
     }
+
     @include lg {
       width: 90%;
       text-align: center;
       margin: 0 2rem;
     }
+
     @include sm {
       margin: 0 2rem;
     }

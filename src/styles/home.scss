@@ -117,15 +117,17 @@
           margin-bottom: $mb-2-5;
         }
       }
+
       @include sm {
         grid-template-columns: 0.5fr 3fr;
         padding-top: 3.5rem;
       }
-  
+
       @include lg {
         grid-template-columns: 2.15rem repeat(2, 1fr);
         column-gap: 1.25rem;
       }
+
       @include md {
         grid-column: 1/3;
       }

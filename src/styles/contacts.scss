@@ -49,6 +49,7 @@
           display: block;
           margin-bottom: $mb-0-25;
         }
+
         .contact-button {
           color: $text-color;
           font-size: $font-medium;
@@ -65,19 +66,23 @@
 
           &:hover {
             color: orangered;
+
             .contact-button-icon {
               transform: translateX(0.25rem);
             }
           }
         }
+
         &:hover {
           border-color: indigo;
           transform: scale(0.9);
         }
       }
+
       @include md {
         justify-content: center;
       }
+
       @include sm-md {
         grid-template-columns: 1fr;
       }
@@ -86,60 +91,64 @@
     .contact-form {
       width: 22.5rem;
 
-    .contact-form-content {
-      position: relative;
-      margin-bottom: $mb-2;
-      height: 4rem;
+      .contact-form-content {
+        position: relative;
+        margin-bottom: $mb-2;
+        height: 4rem;
 
-      &.contact-form-area {
-        height: 11rem;
+        &.contact-form-area {
+          height: 11rem;
 
-        textarea {
-          resize: none;
+          textarea {
+            resize: none;
+          }
+        }
+
+        .contact-form-input {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 2px solid rgba(0, 0, 0, 0.3);
+          background: none;
+          color: $text-color;
+          outline: none;
+          border-radius: 0.75rem;
+          padding: 1.5rem;
+          z-index: 1;
+        }
+
+        .contact-form-tag {
+          position: absolute;
+          top: -0.75rem;
+          left: 1.25rem;
+          font-size: $small-font-size;
+          padding: 0.25rem;
+          background-color: $body-color;
+          z-index: 10;
         }
       }
 
-      .contact-form-input {
-        position: absolute;
-        top: 0;
-        left: 0;
+      @include md {
+        margin: 0 auto;
+      }
+
+      @include sm-md {
         width: 100%;
-        height: 100%;
-        border: 2px solid rgba(0, 0, 0, 0.3);
-        background: none;
-        color: $text-color;
-        outline: none;
-        border-radius: 0.75rem;
-        padding: 1.5rem;
-        z-index: 1;
       }
-
-      .contact-form-tag {
-        position: absolute;
-        top: -0.75rem;
-        left: 1.25re;
-        font-size: $small-font-size;
-        padding: 0.25rem;
-        background-color: $body-color;
-        z-index: 10;
-      }
-    }
-
-    @include md {
-      margin: 0 auto;
-    }
-    @include sm-md {
-      width: 100%;
-    }
     }
   }
+
   @include lg {
     column-gap: 3rem;
   }
+
   @include md {
     grid-template-columns: 1fr;
-    row-gap: 3fr;
+    row-gap: 3rem;
   }
+
   @include sm {
     width: 100%;
   }

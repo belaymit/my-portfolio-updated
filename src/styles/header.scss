@@ -15,6 +15,14 @@
     align-items: center;
     column-gap: 1rem;
 
+    .nav-toggle {
+      display: none;
+
+      @include lg {
+        display: block;
+      }
+    }
+
     .nav-logo,
     .nav-toggle {
       color: $title-color;
@@ -47,12 +55,13 @@
             }
           }
         }
+
         @include lg {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 2rem;
         }
-        
+
         @include sm {
           column-gap: 0;
         }
@@ -91,7 +100,6 @@
 }
 
 .nav-close,
-.nav-toggle,
 .nav-icon {
   display: none;
 

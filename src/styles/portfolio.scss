@@ -1,74 +1,85 @@
 @import '../commons/common-css-rules.scss';
+
 .portfolio-section {
   margin: 0 10rem;
+
   h5 {
-  text-align: center;
-  margin-top: 1.2rem;
-  padding: 0.9rem;
-}
-h2 {
-  text-align: center;
-}
-.portfolio-section-container {
-  margin-top: 2.2rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  .portfolio-item {
-    background: #fff;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid rgb(216, 216, 216);
-  cursor: pointer;
-  transition: $transition;
+    text-align: center;
+    margin-top: 1.2rem;
+    padding: 0.9rem;
+  }
 
-    .portfolio-item-cta {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 1rem;
-      .btn {
-        &.light-btn {
-          background: rgb(12, 122, 185);
-          border: 1px solid #fff;
-          transition: $transition;
+  h2 {
+    text-align: center;
+  }
 
-          &:hover {
-            transform: translateY(-0.25rem);
-            background: transparent;
-            border-color: orangered;
-            color: #222;
+  .portfolio-section-container {
+    margin-top: 2.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    .portfolio-item {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid rgb(216, 216, 216);
+      cursor: pointer;
+      transition: $transition;
+
+      .portfolio-item-cta {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        .btn {
+          &.light-btn {
+            background: rgb(12, 122, 185);
+            border: 1px solid #fff;
+            transition: $transition;
+
+            &:hover {
+              transform: translateY(-0.25rem);
+              background: transparent;
+              border-color: orangered;
+              color: #222;
+            }
           }
         }
-       }
-    }
-    .portfolio-item-img {
-      height: 15rem;
-      border-radius: 0.5rem;
-      overflow: hidden;
+      }
 
-      img {
+      .portfolio-item-img {
+        height: 15rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+
+        img {
           height: 100%;
+        }
+      }
+
+      h3 {
+        margin: 1.2rem 0 1rem;
+      }
+
+      &:hover {
+        border-color: indianred;
+        transform: scale(0.9);
       }
     }
-    h3 {
-      margin: 1.2rem 0 1rem;
+
+    @include lg {
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
     }
-    &:hover {
-      border-color: indianred;
-      transform: scale(0.9);
+
+    @include sm-md {
+      grid-template-columns: 1fr;
+      gap: 1rem;
     }
-  }
-  @include lg {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
   }
 
   @include sm-md {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-}
-@include sm-md {
     margin: 0 2rem;
-}
+  }
 }
