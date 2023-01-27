@@ -1,3 +1,7 @@
+import Iqbal from '../assets/Iqbal.jfif';
+import Ahad from '../assets/Ahad.jfif';
+import Birhanu from '../assets/Birhanu.jfif';
+
 const navLink = [
   {
     id: 1,
@@ -193,6 +197,55 @@ const services = [
   },
 ];
 
+const testimonialData = [
+  {
+    index: 1,
+    avatar: Iqbal,
+    name: 'Iqbal Elham',
+    organization: 'Microverse',
+    review:
+    `Belay is exactly the sort of developer any company would love.
+     He has brilliant communication skills. 
+    I worked alongside him while building 2 
+    different projects and he was always positive and open to learning from others.
+     He was great at remote teamwork, and pair programming and has a keen eye for design.
+      He is also super friendly and respectful so when we worked together,
+       I felt like we'd known each other for years. I can't recommend him enough!`,
+  },
+
+  {
+    index: 2,
+    avatar: Ahad,
+    name: 'Abdul Ahad Bhatti',
+    organization: 'Microverse',
+    review:
+    `It was a wonderful experience to collaborate with Belay Birhanu on various projects
+     at the Microverse program. He is a highly competent developer who uses effective
+      problem-solving techniques. I would like to express my appreciation for his coding 
+      expertise, time management skills, and professionalism. I firmly believe he would be a 
+      valuable member of any team undertaking. If the chance arose, I wouldn't think twice
+       about working with him again`,
+  },
+
+  {
+    index: 3,
+    avatar: Birhanu,
+    name: 'Birhanu Gudisa',
+    organization: 'Microverse',
+    review:
+    `It is my pleasure to recommend Mr. Belay Birhanu who worked with
+     me at microverse as a full-stack developer. He is a very determined,
+      well-qualified and intelligent individual. He is passionate 
+      about writing codes and solving different problems through the
+       development of creative and innovative software. 
+    He is also a delight to work with a team player with 
+    a positive attitude and interpersonal relationship all the way.
+     I wouldn’t hesitate to work with him again if the opportunity arose.`,
+  },
+
+];
+export default testimonialData;
+
 export {
-  navLink, socialLink, frontendSkills, backendSkills, services,
+  navLink, socialLink, frontendSkills, backendSkills, services, testimonialData,
 };
