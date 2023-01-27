@@ -24,13 +24,17 @@
       font-weight: $font-medium;
       text-align: center;
       margin-bottom: $mb-1-5;
+
+      @include lg {
+        margin: 1rem 0;
+      }
     }
 
     .skills-box {
       display: flex;
       justify-content: center;
       column-gap: 2.5rem;
-      
+
       .skills-group {
         display: grid;
         align-items: flex-start;
@@ -45,37 +49,56 @@
             font-size: 1rem;
             color: $link-color;
           }
+
           .skills-name {
             font-size: $normal-font-size;
             font-weight: $font-medium;
             line-height: 1.125rem;
 
+            @include lg {
+              font-size: 1.25rem;
+            }
+
             @include sm {
               font-size: $small-font-size;
             }
           }
+
           .skills-level {
             font-family: $nunito-font;
             color: rgb(104, 42, 17);
             font-size: $tiny-font-size;
             opacity: 0.8;
+
+            @include lg {
+              font-size: 1rem;
+            }
           }
         }
-      }
-      @include sm {
-        column-gap: 1.25rem;
+
+        @include lg {
+          width: 100%;
+          padding: 0 2rem;
+        }
       }
     }
+
     @include sm-md {
       padding: 1.5rem;
     }
+
+    @include sm {
+      column-gap: 1.25rem;
+    }
   }
+
   @include lg {
-    grid-template-columns: max-content;
+    grid-template-columns: 0.75fr;
     row-gap: 2rem;
   }
 
   @include sm-md {
     grid-template-columns: 1fr;
+    margin: 0;
   }
 }

@@ -1,4 +1,5 @@
 @import '../commons/common-css-rules.scss';
+
 .floating-nav {
   background: transparent;
   width: max-content;
@@ -28,7 +29,6 @@
   }
 
   @include sm-md {
-    background: red;
     padding: 0;
     left: 47%;
   }

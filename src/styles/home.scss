@@ -1,4 +1,5 @@
 @import '../commons/common-css-rules.scss';
+
 .home-container {
   row-gap: 7rem;
 
@@ -7,7 +8,7 @@
     padding-top: 5.5rem;
     column-gap: 2rem;
     align-items: center;
-  
+
     .home-img {
       background: url('../assets/profile.jpg');
       background-repeat: no-repeat;
@@ -25,27 +26,29 @@
         width: 11.25rem;
         height: 11.25rem;
       }
-      @include md{
+
+      @include md {
         order: initial;
         justify-self: initial;
       }
+
       @include lg {
         width: 15.625rem;
         height: 15.625rem;
         box-shadow: inset 0 0 0 8px rgb(255, 255, 255);
       }
     }
-  
+
     .home-socials {
       display: grid;
       grid-template-columns: max-content;
       row-gap: 1rem;
-  
+
       .home-social-icon {
         font-size: 1.25rem;
         color: $icon-color;
         transition: $transition;
-  
+
         &:hover {
           color: #834d07;
           opacity: 0.6;
@@ -55,35 +58,35 @@
         }
       }
     }
+
     .home-data {
-  
       .home-title {
         display: flex;
         font-size: $h1-font-size;
         margin-bottom: $mb-0-25;
         background: -webkit-linear-gradient(#7e726f, hsl(330, 46%, 47%));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    
-      .home__hand {
-        width: 2.5rem;
-        height: 2.5rem;
-        margin-left: 0.5rem;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 
-        @include lg {
-          width: 1.625rem;
-          height: 1.625rem;
+        .home__hand {
+          width: 2.5rem;
+          height: 2.5rem;
+          margin-left: 0.5rem;
+
+          @include lg {
+            width: 1.625rem;
+            height: 1.625rem;
+          }
         }
       }
-      }
-  
+
       .home-subtitle {
         position: relative;
         font-size: $h3-font-size;
         padding-left: 4.5rem;
         font-weight: $font-normal;
         margin-bottom: $mb-1;
-  
+
         &::before {
           content: '';
           position: absolute;
@@ -104,7 +107,7 @@
           margin-bottom: $mb-1;
         }
       }
-  
+
       .home-description {
         max-width: 25rem;
         margin-bottom: $mb-3;
@@ -114,16 +117,19 @@
           margin-bottom: $mb-2-5;
         }
       }
+
       @include md {
         grid-column: 1/3;
       }
     }
+
     @include md {
       grid-template-columns: 0.5fr 3fr;
       padding-top: 3.5rem;
     }
+
     @include lg {
-      grid-template-columns: 6.25rem repeat(2, fr);
+      grid-template-columns: 6.25rem repeat(2, 1fr);
       column-gap: 1.25rem;
     }
   }
@@ -143,8 +149,8 @@
       margin-right: $mb-0-25;
       margin-left: 0.125rem;
       font-family: $nunito-font;
-
     }
+
     .home-scroll-arrow {
       font-size: 1.25rem;
       color: $title-color;
@@ -153,6 +159,7 @@
     @include md {
       display: none;
     }
+
     @include lg {
       margin-left: 2.5rem;
     }
@@ -163,15 +170,18 @@
   0% {
     transform: translateY(0);
   }
+
   30% {
     transform: translateY(3.75rem);
   }
 }
+
 @keyframes animateProfile {
   0% {
     border-radius: 50%;
     // 40% 30% 70%/60% 30% 70% 40%;
   }
+
   50% {
     border-radius: 50%;
     // 60% 70% 40%/50% 60% 30% 60%

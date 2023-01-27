@@ -1,4 +1,5 @@
 @import '../commons/common-css-rules.scss';
+
 .service-container {
   grid-template-columns: repeat(3, 16.875rem);
   justify-content: center;
@@ -26,6 +27,10 @@
       background-color: $container-color;
       padding: 2.5rem;
       border-radius: 1.5rem;
+
+      @include sm-md {
+        padding: 4.5rem 1.5rem 2.5rem;
+      }
 
       .service-modal-close {
         position: absolute;
@@ -64,6 +69,7 @@
       .service-modal-services {
         row-gap: 0.75rem;
       }
+
       .services-modal-service {
         display: flex;
         align-items: center;
@@ -73,11 +79,13 @@
           color: $link-color;
           font-size: 1.1rem;
         }
+
         .services-modal-info {
           font-size: $small-font-size;
         }
       }
     }
+
     &.active-modal {
       opacity: 1;
       visibility: visible;
@@ -102,6 +110,10 @@
       color: $link-color;
       margin-bottom: $mb-1;
       text-align: center;
+
+      @include md {
+        font-size: 1.5rem;
+      }
     }
 
     .service-title {
@@ -126,11 +138,28 @@
 
       &:hover {
         color: $link-color;
-       .service-button-icon {
-        transform: translateX(0.25rem);
-        color: rgb(6, 64, 151);
-       }   
+
+        .service-button-icon {
+          transform: translateX(0.25rem);
+          color: rgb(6, 64, 151);
+        }
       }
     }
+
+    @include sm {
+      padding: 1rem 6rem;
+    }
+  }
+
+  @include lg {
+    grid-template-columns: repeat(3, 13.625rem);
+  }
+
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include sm {
+    grid-template-columns: max-content;
   }
 }

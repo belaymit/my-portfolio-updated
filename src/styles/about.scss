@@ -12,11 +12,12 @@
       justify-content: center;
       background: transparent;
       padding: 1rem 0;
-  
+
       @include lg {
         width: 15.75rem;
       }
     }
+
     @include lg {
       display: flex;
       align-items: center;
@@ -86,10 +87,10 @@
         padding: 0 5rem;
         margin-bottom: 2rem;
       }
+
       @include sm-md {
         padding: 0 0.5rem;
       }
-      
     }
 
     @include lg {
