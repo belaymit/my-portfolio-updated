@@ -4,7 +4,7 @@
   row-gap: 7rem;
 
   .home-content {
-    grid-template-columns: 6.46rem repeat(2, 1fr);
+    grid-template-columns: 2.46rem repeat(2, 1fr);
     padding-top: 5.5rem;
     column-gap: 2rem;
     align-items: center;
@@ -117,20 +117,18 @@
           margin-bottom: $mb-2-5;
         }
       }
-
+      @include sm {
+        grid-template-columns: 0.5fr 3fr;
+        padding-top: 3.5rem;
+      }
+  
+      @include lg {
+        grid-template-columns: 2.15rem repeat(2, 1fr);
+        column-gap: 1.25rem;
+      }
       @include md {
         grid-column: 1/3;
       }
-    }
-
-    @include md {
-      grid-template-columns: 0.5fr 3fr;
-      padding-top: 3.5rem;
-    }
-
-    @include lg {
-      grid-template-columns: 6.25rem repeat(2, 1fr);
-      column-gap: 1.25rem;
     }
   }
 
