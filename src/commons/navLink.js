@@ -1,6 +1,12 @@
 import Iqbal from '../assets/Iqbal.jfif';
 import Ahad from '../assets/Ahad.jfif';
 import Birhanu from '../assets/Birhanu.jfif';
+import Img1 from '../assets/bookstore.jfif';
+import Img2 from '../assets/conferecncefora.jfif';
+import Img3 from '../assets/movies-app.jpg';
+import Img4 from '../assets/leader-board.jfif';
+import Img5 from '../assets/magic-calculator.jpg';
+import Img6 from '../assets/awesome-books.jfif';
 
 const navLink = [
   {
@@ -244,8 +250,58 @@ const testimonialData = [
   },
 
 ];
-export default testimonialData;
+
+const portfolioData = [
+  {
+    id: 1,
+    image: Img1,
+    title: 'Awesome Books',
+    github: 'https://github.com/belaymit/Awesome-books--ES6',
+    demo: 'https://belaymit.github.io/Awesome-books--ES6/',
+  },
+
+  {
+    id: 2,
+    image: Img2,
+    title: 'Microverse Capstone Project I',
+    github: 'https://github.com/belaymit/Microverse-Capstone-Project-M1',
+    demo: 'https://belaymit.github.io/Microverse-Capstone-Project-M1/',
+  },
+
+  {
+    id: 3,
+    image: Img3,
+    title: 'Awesome Books',
+    github: 'https://github.com/belaymit/Awesome-books--ES6',
+    demo: 'https://belaymit.github.io/Awesome-books--ES6/',
+  },
+
+  {
+    id: 4,
+    image: Img4,
+    title: 'Conference Program',
+    github: 'https://github.com/belaymit/Microverse-Capstone-Project-M1',
+    demo: 'https://belaymit.github.io/Microverse-Capstone-Project-M1/',
+  },
+
+  {
+    id: 5,
+    image: Img5,
+    title: 'Conference Speakers',
+    github: 'https://github.com/belaymit/Microverse-Capstone-Project-M1',
+    demo: 'https://belaymit.github.io/Microverse-Capstone-Project-M1/',
+  },
+
+  {
+    id: 6,
+    image: Img6,
+    title: 'Leaderboard',
+    github: 'https://github.com/belaymit/leaderboard-APIs-git-flow',
+    demo: 'https://github.com/belaymit/leaderboard-APIs-git-flow',
+  },
+
+];
 
 export {
-  navLink, socialLink, frontendSkills, backendSkills, services, testimonialData,
+  navLink, socialLink, frontendSkills, backendSkills, services, testimonialData, portfolioData,
 };
