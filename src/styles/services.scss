@@ -1,0 +1,165 @@
+@import '../commons/common-css-rules.scss';
+
+.service-container {
+  grid-template-columns: repeat(3, 16.875rem);
+  justify-content: center;
+  column-gap: 1.8rem;
+
+  .service-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: $z-modal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: $transition;
+
+    .service-modal-content {
+      width: 31.25rem;
+      position: relative;
+      background-color: $container-color;
+      padding: 2.5rem;
+      border-radius: 1.5rem;
+
+      @include sm-md {
+        padding: 4.5rem 1.5rem 2.5rem;
+      }
+
+      .service-modal-close {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        font-size: 1.5rem;
+        color: $title-color;
+        cursor: pointer;
+        background: whitesmoke;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .service-modal-title,
+      .services-modal-description {
+        text-align: center;
+      }
+
+      .service-modal-title {
+        font-size: $h3-font-size;
+        font-weight: $font-medium;
+        margin-bottom: $mb-1;
+      }
+
+      .services-modal-description {
+        font-size: $small-font-size;
+        padding: 0 3.5rem;
+        margin-bottom: $mb-1;
+        border-bottom: 1px solid rgb(175, 162, 162);
+      }
+
+      .service-modal-services {
+        row-gap: 0.75rem;
+      }
+
+      .services-modal-service {
+        display: flex;
+        align-items: center;
+        column-gap: 0.5rem;
+
+        .service-modal-icon {
+          color: $link-color;
+          font-size: 1.1rem;
+        }
+
+        .services-modal-info {
+          font-size: $small-font-size;
+        }
+      }
+    }
+
+    &.active-modal {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .service-content {
+    position: relative;
+    border: 1px solid rgba(94, 11, 119, 0.1);
+    background-color: $container-color;
+    padding: 2rem 1rem;
+    border-radius: 0.75rem;
+    transition: $transition;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .service-icon {
+      display: block;
+      font-size: 2rem;
+      color: $link-color;
+      margin-bottom: $mb-1;
+      text-align: center;
+
+      @include md {
+        font-size: 1.5rem;
+      }
+    }
+
+    .service-title {
+      font-size: $h3-font-size;
+      margin-bottom: $mb-1;
+      text-align: center;
+      font-weight: $font-medium;
+    }
+
+    .services-button {
+      color: $title-color;
+      font-size: $small-font-size;
+      display: flex;
+      align-items: center;
+      column-gap: 0.25rem;
+      cursor: pointer;
+
+      .service-button-icon {
+        font-size: 1rem;
+        transition: $transition;
+      }
+
+      &:hover {
+        color: $link-color;
+
+        .service-button-icon {
+          transform: translateX(0.25rem);
+          color: rgb(6, 64, 151);
+        }
+      }
+    }
+
+    @include sm {
+      padding: 1rem 6rem;
+    }
+  }
+
+  @include lg {
+    grid-template-columns: repeat(3, 13.625rem);
+  }
+
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include sm {
+    grid-template-columns: max-content;
+  }
+}

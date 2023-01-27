@@ -1,0 +1,8 @@
+@import './commons/common-css-rules.scss';
+
+.main {
+  @include md {
+    width: 100%;
+    // background: red;
+  }
+}

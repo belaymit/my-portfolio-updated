@@ -1,0 +1,104 @@
+@import '../commons/common-css-rules.scss';
+
+.skills-container {
+  grid-template-columns: repeat(2, 23.875rem);
+  column-gap: 3rem;
+  justify-content: center;
+
+  .skills-content {
+    background-color: $container-color;
+    border: 1px solid rgba(94, 4, 136, 0.1);
+    padding: 2rem 2rem;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      border: 1.3px solid $link-color;
+      background: transparent;
+      transform: scale(0.9);
+    }
+
+    .skills-title {
+      font-size: $normal-font-size;
+      font-weight: $font-medium;
+      text-align: center;
+      margin-bottom: $mb-1-5;
+
+      @include lg {
+        margin: 1rem 0;
+      }
+    }
+
+    .skills-box {
+      display: flex;
+      justify-content: center;
+      column-gap: 2.5rem;
+
+      .skills-group {
+        display: grid;
+        align-items: flex-start;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+
+        .skills-data {
+          display: flex;
+          column-gap: 0.5rem;
+
+          .bx-badge-check {
+            font-size: 1rem;
+            color: $link-color;
+          }
+
+          .skills-name {
+            font-size: $normal-font-size;
+            font-weight: $font-medium;
+            line-height: 1.125rem;
+
+            @include lg {
+              font-size: 1.25rem;
+            }
+
+            @include sm {
+              font-size: $small-font-size;
+            }
+          }
+
+          .skills-level {
+            font-family: $nunito-font;
+            color: rgb(104, 42, 17);
+            font-size: $tiny-font-size;
+            opacity: 0.8;
+
+            @include lg {
+              font-size: 1rem;
+            }
+          }
+        }
+
+        @include lg {
+          width: 100%;
+          padding: 0 2rem;
+        }
+      }
+    }
+
+    @include sm-md {
+      padding: 1.5rem;
+    }
+
+    @include sm {
+      column-gap: 1.25rem;
+    }
+  }
+
+  @include lg {
+    grid-template-columns: 0.75fr;
+    row-gap: 2rem;
+  }
+
+  @include sm-md {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+}

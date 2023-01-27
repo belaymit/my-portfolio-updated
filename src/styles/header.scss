@@ -1,0 +1,118 @@
+@import '../commons/common-css-rules.scss';
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $container-color;
+  z-index: $z-fixed;
+
+  .nav {
+    height: calc($header-height + 1.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+
+    .nav-toggle {
+      display: none;
+
+      @include lg {
+        display: block;
+      }
+    }
+
+    .nav-logo,
+    .nav-toggle {
+      color: $title-color;
+      font-weight: $font-medium;
+
+      @include lg {
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    }
+
+    .nav-menu {
+      .nav-list {
+        display: flex;
+        column-gap: 2rem;
+
+        .nav-item {
+          .nav-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: $small-font-size;
+            color: $title-color;
+            font-weight: $font-medium;
+            transition: $transition;
+
+            &:hover {
+              color: $link-color;
+              margin-top: -0.25rem;
+            }
+          }
+        }
+
+        @include lg {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2rem;
+        }
+
+        @include sm {
+          column-gap: 0;
+        }
+      }
+
+      @include lg {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: $body-color;
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: $transition;
+      }
+
+      @include sm {
+        padding: 2rem 0.25rem 4rem;
+      }
+
+      &.show-menu {
+        bottom: 0;
+      }
+    }
+
+    @include lg {
+      height: $header-height;
+    }
+  }
+
+  @include lg {
+    top: initial;
+    bottom: 0;
+  }
+}
+
+.nav-close,
+.nav-icon {
+  display: none;
+
+  @include lg {
+    display: block;
+  }
+}
+
+.nav-close {
+  position: absolute;
+  right: 1.3rem;
+  bottom: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: $title-color;
+}

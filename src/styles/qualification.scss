@@ -1,0 +1,109 @@
+@import '../commons/common-css-rules.scss';
+
+.qualification-container {
+  max-width: 65.25rem;
+
+  .qualification-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: $mb-2;
+
+    .qualification-button {
+      font-size: $h3-font-size;
+      font-weight: $font-medium;
+      color: $title-color;
+      margin: 0 $mb-1;
+      cursor: pointer;
+      transition: $transition;
+
+      &:hover {
+        color: $link-color;
+      }
+
+      .qualification-icon {
+        font-size: 1.8rem;
+        margin-right: $mb-0-25;
+      }
+
+      &.qualification-active {
+        color: $link-color;
+        text-decoration: underline;
+        font-family: $nunito-font;
+        text-transform: uppercase;
+      }
+
+      @include sm-md {
+        margin: 0 $mb-0-75;
+      }
+    }
+  }
+
+  .qualification-sections {
+    display: grid;
+    grid-template-columns: 0.5fr;
+    justify-content: center;
+
+    .qualification-content {
+      display: none;
+
+      &.qualification-content-active {
+        display: block;
+      }
+
+      .qualification-data {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        column-gap: 1.5rem;
+
+        .qualification-title {
+          font-size: $normal-font-size;
+          font-weight: $font-medium;
+        }
+
+        .qualification-subtitle {
+          display: inline-block;
+          font-size: $small-font-size;
+          margin-bottom: $mb-1;
+        }
+
+        .qualification-calendar {
+          font-size: $small-font-size;
+        }
+
+        .qualification-rounder {
+          display: inline-block;
+          width: 0.8125rem;
+          height: 0.8125rem;
+          background-color: $text-color;
+          border-radius: 50%;
+        }
+
+        .qualification-line {
+          display: block;
+          width: 1px;
+          height: 100%;
+          background-color: $text-color;
+          transform: translate(6px, -7px);
+        }
+
+        @include sm {
+          gap: 0.5rem;
+        }
+      }
+    }
+
+    @include sm-md {
+      grid-template-columns: initial;
+    }
+  }
+
+  @include lg {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include md {
+    margin-left: $mb-1-5;
+    margin-right: $mb-1-5;
+  }
+}

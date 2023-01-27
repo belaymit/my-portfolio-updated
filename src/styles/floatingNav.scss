@@ -1,0 +1,36 @@
+@import '../commons/common-css-rules.scss';
+
+.floating-nav {
+  background: transparent;
+  width: max-content;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+
+  a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: black;
+    font-size: 1.3rem;
+
+    &:hover {
+      background: rgba(26, 27, 27, 0.3);
+      color: aquamarine;
+    }
+  }
+
+  @include sm-md {
+    display: none;
+    padding: 0;
+    left: 47%;
+  }
+}

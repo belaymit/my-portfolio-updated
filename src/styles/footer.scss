@@ -1,0 +1,78 @@
+@import '../commons/common-css-rules.scss';
+
+footer {
+  background-color: $container-color;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  .footer-container {
+    padding: 2rem 0 8rem;
+
+    .footer-link {
+      transition: $transition;
+
+      &:hover {
+        color: indianred;
+      }
+    }
+
+    .footer-title,
+    .footer-list {
+      .footer-link {
+        color: $title-color;
+      }
+    }
+
+    .footer-title {
+      text-align: center;
+      margin-bottom: $mb-2;
+      color: $link-color;
+    }
+
+    .footer-list {
+      display: flex;
+      justify-content: center;
+      column-gap: 1.5rem;
+      margin-bottom: $mb-2;
+    }
+
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      column-gap: 1.25rem;
+
+      .footer-social-icon {
+        background-color: rgb(10, 76, 129);
+        color: $container-color;
+        font-size: 1.125rem;
+        width: 2rem;
+        height: 2rem;
+        padding: 0.4rem;
+        border-radius: 0.5rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: $transition;
+
+        &:hover {
+          border: 0.3px solid rgb(0, 61, 130);
+          background-color: rgb(13, 60, 121);
+          transform: scale(0.9);
+        }
+
+        @include lg {
+          padding: 0.25rem;
+          border-radius: 0.25rem;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .footer-copy {
+      display: block;
+      margin-top: 4.5rem;
+      color: $title-color;
+      text-align: center;
+      font-size: $smaller-font-size;
+    }
+  }
+}
