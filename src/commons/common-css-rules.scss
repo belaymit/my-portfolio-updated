@@ -249,18 +249,18 @@ img {
   display: flex;
   align-items: center;
   gap: 1rem;
-  background: $link-color;
-  color: #fff;
-  padding: 0.6rem 1.5rem;
-  border: 2px solid transparent;
+  background: transparent;
+  color: #222;
+  padding: 0.25rem 1.5rem;
+  border: 0.3px solid rgb(54, 32, 70);
   border-radius: 0.25rem;
   cursor: pointer;
   transition: $transition;
 }
 
 .btn:hover {
-  background-color: transparent;
-  border-color: indigo;
+  background-color: whitesmoke;
+  border-color: rgb(7, 106, 131);
   transform: translateY(-0.5rem);
   color: #222;
 }
