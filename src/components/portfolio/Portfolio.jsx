@@ -4,8 +4,8 @@ import '../../styles/portfolio.scss';
 
 const Portfolio = () => (
   <section id="portfolio" className="portfolio-section">
-    <h5>My Recent Works</h5>
     <h2>Portfolio</h2>
+    <h5>My Recent Works</h5>
     <div className="container portfolio-section-container">
       {
         portfolioData.map(({
