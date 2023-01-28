@@ -23,8 +23,8 @@ const App = () => (
       <Portfolio />
       <Testimonial />
       <Contacts />
-      <Footer />
     </main>
+    <Footer />
     <FloatingNav />
   </>
 );
