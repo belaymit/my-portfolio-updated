@@ -84,61 +84,51 @@ const frontendSkills = [
     id: 1,
     skill: 'HTML5',
     level: 'Experienced',
-    icon: 'facebook-f',
   },
   {
     id: 2,
     skill: 'CSS3',
     level: 'Experienced',
-    icon: 'facebook-f',
   },
   {
     id: 3,
     skill: 'SCSS',
     level: 'Experienced',
-    icon: 'facebook-f',
   },
   {
     id: 4,
     skill: 'Bootstrap',
     level: 'Experienced',
-    icon: 'facebook-f',
   },
   {
     id: 5,
     skill: 'tailwind',
     level: 'Intermediate',
-    icon: 'facebook-f',
   },
   {
     id: 6,
     skill: 'JavaScript',
     level: 'Experienced',
-    icon: 'facebook-f',
   },
   {
     id: 7,
     skill: 'React',
     level: 'Experienced',
-    icon: 'facebook-f',
   },
   {
     id: 8,
     skill: 'Redux',
     level: 'Experienced',
-    icon: 'facebook-f',
   },
   {
     id: 9,
     skill: 'Git',
     level: 'Experienced',
-    icon: 'facebook-f',
   },
   {
     id: 10,
     skill: 'Typescript',
     level: 'Intermediate',
-    icon: 'facebook-f',
   },
 ];
 
