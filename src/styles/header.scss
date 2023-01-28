@@ -101,6 +101,11 @@
     top: initial;
     bottom: 0;
   }
+
+  &.scroll-header {
+    box-shadow: 0 1px 10px rgba(143, 8, 161, 0.15);
+    border-bottom: 0.3px solid rgb(203, 197, 207);
+  }
 }
 
 .nav-close,
