@@ -22,11 +22,13 @@
         display: block;
       }
     }
+
     .nav-logo {
       background: -webkit-linear-gradient(#cf520a, hsl(330, 62%, 23%));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
     .nav-logo,
     .nav-toggle {
       color: $title-color;
