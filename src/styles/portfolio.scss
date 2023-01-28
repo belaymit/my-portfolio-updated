@@ -2,15 +2,16 @@
 
 .portfolio-section {
   margin: 0 10rem;
+  h2 {
+    text-align: center;
+    color: $link-color;
+    margin-top: 2rem;
+  }
 
   h5 {
     text-align: center;
-    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
     padding: 0.9rem;
-  }
-
-  h2 {
-    text-align: center;
   }
 
   .portfolio-section-container {
@@ -24,7 +25,6 @@
       padding: 1rem;
       border-radius: 0.5rem;
       border: 1px solid rgb(216, 216, 216);
-      cursor: pointer;
       transition: $transition;
 
       .portfolio-item-cta {
@@ -34,8 +34,8 @@
 
         .btn {
           &.light-btn {
-            background: rgb(12, 122, 185);
-            border: 1px solid #fff;
+            background: transparent;
+            border: 1px solid rgb(89, 47, 138);
             transition: $transition;
 
             &:hover {
@@ -60,6 +60,7 @@
 
       h3 {
         margin: 1.2rem 0 1rem;
+        color: $link-color;
       }
 
       &:hover {
