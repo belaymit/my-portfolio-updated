@@ -18,16 +18,25 @@ const About = () => (
       <div className="about-data">
         <Info />
         <p className="about-description">
-          Hello, my name is Belay, and I am a remote frontend developer
-          with experience working at Microverse. I am skilled in technologies
-          such as React, Redux, JavaScript, SASS, Bootstrap and HTML/CSS and have a strong
-          understanding of user experience and design principles. I have experience
-          working in a remote team environment and am comfortable using tools
-          like GitHub and Slack to collaborate effectively with my colleagues.
-          My experience at Microverse has given me the opportunity to work on
-          a wide range of projects and collaborate with developers from around
-          the world. I am excited about the opportunity to bring my skills and
-          experience to a new team and help build great products remotely.
+          My technical expertise includes proficiency in both front-end and back-end development.
+          I have experience with HTML, CSS, JavaScript, jQuery, React, Redux, Node.js,
+          PHP, MySQL, MongoDB, Postgresql, GraphQL, Ruby, Rails  and other technologies
+          that are essential for building scalable web applications.
+          I am familiar with Agile methodology and have experience working
+          in teams to deliver high-quality software solutions. Additionally,
+          I have also worked with a variety of tools and frameworks,
+          such as Git, Heroku, and AWS, to name a few. My technical
+          expertise allows me to efficiently develop, debug, and deploy web applications.
+
+          What sets me apart from other developers is my effective problem-solving ability.
+          I am a critical thinker who enjoys finding creative solutions to complex problems.
+          I am confident in my ability to identify issues and develop effective solutions
+          that meet the needs of your business. I possess expertise in remote pair programming,
+          a valuable skill for a Full-Stack Developer, and I am confident in my ability
+          to effectively communicate my ideas and offer constructive feedback while
+          working alongside other developers. My strong communication skills enable
+          me to contribute to a positive and collaborative work environment
+
         </p>
         <a href="https://docs.google.com/document/d/15ChKO9UmkTZZIl-9vBVUdCTnK9dNWOVwErJ6WKXC37Y/edit?usp=sharing" className="button button--flex" type="button">
           Download CV
