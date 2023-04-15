@@ -7,6 +7,9 @@ import Img3 from '../assets/movies-app.jpg';
 import Img4 from '../assets/leader-board.jfif';
 import Img5 from '../assets/magic-calculator.jpg';
 import Img6 from '../assets/awesome-books.jfif';
+import Diego from '../assets/Diego.jpg';
+import Glenda from '../assets/Glenda.jpg';
+import Giovani from '../assets/Giovani.jpg';
 
 const navLink = [
   {
@@ -136,37 +139,42 @@ const backendSkills = [
   {
     id: 1,
     skill: 'PHP',
-    level: 'Experienced',
+    level: 'Intermediate',
   },
   {
     id: 2,
     skill: 'Node Js',
-    level: 'Intermediate',
+    level: 'Experienced',
   },
   {
     id: 3,
+    skill: 'GraphQL',
+    level: 'Experienced',
+  },
+  {
+    id: 4,
     skill: 'Python',
     level: 'Intermediate',
   },
   {
-    id: 4,
+    id: 5,
     skill: 'MySQL',
     level: 'Intermediate',
   },
   {
-    id: 5,
+    id: 6,
     skill: 'Firebase',
     level: 'Intermediate',
   },
   {
-    id: 6,
+    id: 7,
     skill: 'Django',
     level: 'Intermediate',
   },
   {
-    id: 7,
+    id: 8,
     skill: 'Ruby on rails',
-    level: 'Basic',
+    level: 'Intermediate',
   },
 ];
 
@@ -237,6 +245,42 @@ const testimonialData = [
     He is also a delight to work with a team player with 
     a positive attitude and interpersonal relationship all the way.
      I wouldn’t hesitate to work with him again if the opportunity arose.`,
+  },
+  {
+    index: 4,
+    avatar: Diego,
+    name: 'Diego Cuenca Morocho',
+    organization: 'Microverse',
+    review:
+    `I had the pleasure of studying alongside Belay in several courses at Microverse,
+     an online tech code academy, and I must say that he is one of the most professional
+      and knowledgeable developers I have met. 
+      Belay has a strong understanding of various coding languages such as Ruby, 
+      React, JavaScript, CSS, and HTML. His dedication to his work is evident 
+      through his consistent hard work and willingness to help his classmates
+       in any way he can. I am impressed with his ability to find solutions 
+       to complex problems quickly and efficiently. Belay is an asset to
+        any team and I highly recommend him to any employer looking for a 
+        dedicated, professional, and skilled developer.`,
+  },
+  {
+    index: 5,
+    avatar: Glenda,
+    name: 'Glenda Diaz',
+    organization: 'Microverse',
+    review:
+    `Belay was my coding partner during the Microverse Program, and his skills and knowledge were unparalleled. Along with that, he brought energy and dependability that made him crucial to our project.
+    He showed broad knowledge in Jest and save our team time, by finding the simplest solution, he was never late for a meeting, and he was always ready to solve any issue that will come our way, 
+    I wish him the best in all he does and I know that any position he wishes to undertake he will doubtlessly be a star in it`,
+  },
+  {
+    index: 6,
+    avatar: Giovani,
+    name: 'Giovanni Juliao',
+    organization: 'Microverse',
+    review:
+    `Having the opportunity to work together on coding projects with Belay has been a great experience. Belay's positive attitude makes work more enjoyable. 
+    Any company would be lucky to have him as a team member.`,
   },
 
 ];

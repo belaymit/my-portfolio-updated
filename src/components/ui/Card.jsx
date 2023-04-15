@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import './card.css';
 
 const Card = ({ children, className, onClick }) => (
   <article className={`card ${className}`} onClick={onClick} role="presentation">

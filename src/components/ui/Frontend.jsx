@@ -4,7 +4,7 @@ import { frontendSkills } from '../../commons/navLink';
 const Frontend = () => (
   <div className="skills-content">
     <h3 className="skills-title">
-      Frontend Developer
+      Frontend Technologies
     </h3>
     <div className="skills-box">
       <div className="skills-group">
